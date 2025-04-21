@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'Cardinal';
+  src: url('assets/fonts/Cardinal.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cardinal-Alternate';
+  src: url('assets/fonts/Cardinal-Alternate.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cracked Johnny';
+  src: url('assets/fonts/cracked_johnnie.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Crimson+Pro:wght@400;700&family=IM+Fell+DW+Pica:ital@0;1&family=Vollkorn:wght@400;700&display=swap');
+
+body {
+  background-color: #0D0A52 !important; /* force it back to the deep blue */
+  color: #F2ECD2;
+  font-family: 'Cardinal', serif;
+}
+
+
+/* Tagline or humorous accents */
+.tagline {
+  font-family: 'Cracked Johnny', cursive;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #F2ECD2;
+}
+
+.logo-container {
+  padding: 20px; /* Apply padding to the wrapper instead */
+  display: block;
+}
+
+/* Logo Styling */
+.logo {
+  max-height: 480px;
+  width: auto;
+  margin: 0;
+  display: block;
+  margin: 20px;
+}
+
+/* Responsive resizing */
+@media (max-width: 768px) {
+  .logo {
+    max-height: 420px;
+  }
+
+  .medieval-title {
+    font-size: 2.2rem;
+    color: #F2ECD2;
+  }
+}
+
+/* Navigation */
+.navbar .nav-link {
+  color: #F2ECD2;
+  margin: 0 10px;
+  font-weight: bold;
+  font-family: 'Uncial Antiqua';
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Headings styled with Cardinal */
+.medieval-title {
+  font-family: 'Cardinal', serif;
+  font-size: 3rem;
+  text-align: center;
+  color: #F2ECD2;
+}
+
+/* Boxes (Upcoming Shows, Merch) */
+.custom-box {
+  background-color: #F2ECD2;
+  color: #0D0A52;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  font-family: 'Crimson Pro', serif;
+  width: 100%;
+}
+
+.row.equal-height > [class^="col-"] {
+  display: flex;
+}
+.row.equal-height > [class^="col-"] > .custom-box {
+  flex: 1;
+}
+
+/* Buttons */
+.btn-outline-light {
+  border-color: #0D0A52;
+  color: #0D0A52;
+  font-weight: bold;
+  font-family: 'Cardinal', serif;
+}
+
+.btn-outline-light:hover {
+  background-color: #0D0A52;
+  color: #F2ECD2;
+}
+
+/* Footer + Socials */
+footer {
+  border-top: 2px solid #F2ECD2;
+  color: #F2ECD2;
+  font-family: 'Uncial Antiqua', serif;
+}
+
+.social-icons a {
+  font-size: 1.8rem;
+  margin: 0 10px;
+  color: #F2ECD2;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #FFD700;
+}
+
+.emoji-sized-img {
+  height: 2em;
+  width: 2em;
+  object-fit: contain;
+  vertical-align: text-bottom;
+}
+
+/* Band Bios */
+.bio-card {
+  background-color: #F2ECD2;
+  color: #0D0A52;
+  padding: 1.2rem;
+  border-radius: 8px;
+  height: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Crimson Pro', serif;
+}
+
+.custom-box h5,
+.bio-card h5 {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-family: 'Cormorant Garamond', serif;
+  width: 100%;
+}
+
+.bio-pic {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+}
