@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Crimson+Pro:wght@400;700&family=IM+Fell+DW+Pica:ital@0;1&family=Vollkorn:wght@400;700&display=swap');
+
 @font-face {
   font-family: 'Cardinal';
   src: url('assets/fonts/Cardinal.ttf') format('truetype');
@@ -12,8 +14,6 @@
   font-family: 'Cracked Johnny';
   src: url('assets/fonts/cracked_johnnie.ttf') format('truetype');
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Crimson+Pro:wght@400;700&family=IM+Fell+DW+Pica:ital@0;1&family=Vollkorn:wght@400;700&display=swap');
 
 body {
   background-color: #0D0A52 !important; /* force it back to the deep blue */
@@ -159,3 +159,38 @@ footer {
   margin: 0 auto;
   display: block;
 }
+
+.upcoming-shows {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.upcoming-shows li {
+  display: flex;
+  gap: 0.5em;
+  align-items: flex-start;
+  margin-bottom: 0.5em;
+  flex-wrap: wrap; /* allows wrapping if needed */
+}
+
+.upcoming-shows .date {
+  width: 5em; /* set a fixed width for colon-aligned section */
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.upcoming-shows a,
+.upcoming-shows a:visited,
+.upcoming-shows a:hover,
+.upcoming-shows a:active {
+  color: #6495ED !important;
+  text-decoration: underline;
+}
+
+.upcoming-shows a:hover {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+
