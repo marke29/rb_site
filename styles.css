@@ -39,9 +39,8 @@ body {
 .logo {
   max-height: 480px;
   width: auto;
-  margin: 0;
   display: block;
-  margin: 20px;
+  margin: 20px auto;
 }
 
 /* Responsive resizing */
